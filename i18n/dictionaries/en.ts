@@ -38,8 +38,7 @@ const en = {
     statsLabel: 'Track record',
   },
   proof: {
-    rating: 'rating',
-    hires: 'times hired',
+    rating: 'Contra rating',
     earned: 'earned on Contra',
     featured: 'Featured among the best Spanish-speaking SaaS freelancers',
   },

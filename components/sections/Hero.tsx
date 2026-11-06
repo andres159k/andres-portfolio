@@ -8,7 +8,6 @@ import { site } from '@/lib/site'
 export function Hero({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const proof = [
     { value: site.proof.rating, label: dict.proof.rating },
-    { value: site.proof.hires, label: dict.proof.hires },
     { value: site.proof.earned, label: dict.proof.earned },
   ]
 
@@ -47,7 +46,7 @@ export function Hero({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           </div>
         </div>
 
-        <div className="mt-10 grid grid-cols-2 gap-x-8 gap-y-8 border-t border-[var(--color-line)] pt-6 sm:grid-cols-4 md:mt-16 md:pt-8">
+        <div className="mt-10 grid grid-cols-2 gap-x-8 gap-y-8 border-t border-[var(--color-line)] pt-6 sm:grid-cols-3 md:mt-16 md:pt-8">
           <div className="flex flex-col gap-2">
             <span className="font-display text-3xl font-semibold text-[var(--color-foreground)]">
               7+

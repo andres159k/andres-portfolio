@@ -1,12 +1,12 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import { AboutPortrait } from '@/components/sections/AboutPortrait'
 import { ContactCTA } from '@/components/sections/ContactCTA'
 import { Reveal } from '@/components/ui/Reveal'
 import { Section, SectionLabel } from '@/components/ui/Section'
 import { Tag } from '@/components/ui/Tag'
 import { isLocale } from '@/i18n/config'
 import { getDictionary } from '@/i18n/get-dictionary'
-import { site } from '@/lib/site'
 
 export async function generateMetadata({
   params,
@@ -47,19 +47,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
               </div>
             </div>
 
-            <div className="glass glass-sheen flex aspect-[4/3] flex-col justify-between rounded-[var(--radius-xl)] p-6 md:aspect-square md:p-8">
-              <span className="eyebrow">
-                {dict.about.eyebrow} — {site.location}
-              </span>
-              <p className="font-display text-[clamp(2.2rem,5vw,3.4rem)] leading-[0.95] font-semibold text-[var(--color-foreground)] uppercase">
-                {site.name}
-              </p>
-              <div>
-                <span className="inline-block h-2.5 w-2.5 bg-[var(--color-accent)]" />
-                <p className="eyebrow mt-4">{dict.about.currently}</p>
-                <p className="mt-1 text-sm text-[var(--color-foreground)]">{site.role}</p>
-              </div>
-            </div>
+            <AboutPortrait dict={dict} />
           </div>
         </div>
       </header>

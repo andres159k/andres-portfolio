@@ -14,7 +14,6 @@ export const site = {
   },
   proof: {
     rating: '5.00',
-    hires: '5x',
     earned: '$50k+',
   },
 } as const

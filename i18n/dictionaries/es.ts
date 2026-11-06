@@ -40,8 +40,7 @@ const es: Dictionary = {
     statsLabel: 'Trayectoria',
   },
   proof: {
-    rating: 'valoración',
-    hires: 'veces contratado',
+    rating: 'valoración en Contra',
     earned: 'facturado en Contra',
     featured: 'Destacado entre los mejores freelancers SaaS hispanohablantes',
   },
